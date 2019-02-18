@@ -103,7 +103,7 @@ def main(argv):
     if len(argv) > 1:
         path = argv[1] + '\\'
     else:
-        path = os.getcwd() + '\\test'
+        path = os.getcwd() + '\\'
     print("正在扫描目录 {} 下的所有文件，请稍等…".format(path))
     none, result = get_files_md5(path)
     for item in result:
